@@ -95,6 +95,13 @@ body {
   }
 }
 
+@media (max-width: 988px) {
+  .navbar-menu {
+    margin-right: 10px;
+  }
+}
+
+
 
 
 
