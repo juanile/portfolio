@@ -5,15 +5,11 @@ body {
   /* Navigation Bar */
   
   #home {
-    background-color:  #7600bc;
-    padding-bottom: 1cm;
-    margin-left:-1cm;
-    margin-right:-1cm;
-    margin-top:-1cm;
-    padding-top: 2cm;
-    padding-bottom: 2cm;
-    height: 5mm;
-   }
+    background-color: #7600bc;
+    padding: 2cm 0;
+    margin: 0;
+    height: auto;
+  }
   
   .topmenu {
     color: lightgray;
@@ -129,9 +125,15 @@ body {
     text-align: center;
     margin: 50px;
     padding: 10px;
-    width: 2in;
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease; /* Añade una transición suave */
     font-size: 20px;
     box-shadow: 0 3px 10px gray;
+  }
+
+  .skill img:hover {
+    transform: scale(1.7); /* Agranda la imagen al 120% de su tamaño original */
   }
   
   .skill img {
@@ -225,7 +227,7 @@ body {
   
   /* Scroll to Top Button */
   
-  .iconbutton{
+  .iconbutton {
     width: 48px;
     height: 48px;
     border-radius: 100%;
@@ -237,70 +239,15 @@ body {
     right: 3%;
     bottom: 3%;
     cursor: pointer;
+    z-index: 100;
   }
   
-  /* Form Pop-up */
-  
-  .popup {
-    width:400px;
-    background-color: #e8bcf0;
-    border-radius: 3mm;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    position: fixed;
-    /* padding: 30px; */
-    visibility: hidden;
+  .iconbutton img {
+    width: 24px;
+    height: 24px;
   }
   
-  .popup img {
-    padding-top: 20px;
-  }
-  
-  .popup button {
-    background-color: #fff;
-    border: 1px solid #7600bc;
-    color: #7600bc;
-    display: block;
-    border-radius: 6px;
-    text-align: center;
-    margin: 50px;
-    padding: 10px;
-    width: 2in;
-    font-size: 20px;
-    margin-left: 25%;
-  }
-  
-  .popup button:hover {
-    background-color: #fff;
-    border: 2px solid #7600bc;
-    color: #7600bc;
-    display: block;
-    font-weight: bolder;
-    text-align: center;
-    cursor: pointer;
-    margin-left: 25%;
-  }
-  
-  /* Recommendation Form */
-  
-  input, textarea {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    margin: 10px;  
-    width:100%;
-  }
-  
-  fieldset {
-    display: flexbox;
-    align-content: center;
-    justify-content: center;  
-    padding: 25px; 
-    margin-left: 50px; 
-    margin-right: 50px;   
-    border: thin solid white;
-    width: 50%;
-  }
+
   
   /* Buttons */
   
@@ -325,4 +272,14 @@ body {
     border-radius: 6px;
     text-align: center;
     cursor: pointer;
+  }
+
+  video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
   }
