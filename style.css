@@ -368,14 +368,15 @@ button:hover {
 
 
 video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-  object-fit: cover;
+  position: fixed;      /* Mantiene el video fijo en la pantalla */
+  top: 0;               /* Alinea el video con la parte superior de la ventana */
+  left: 0;              /* Alinea el video con la parte izquierda de la ventana */
+  width: 100vw;         /* Establece el ancho del video al 100% del viewport width */
+  height: 100vh;        /* Establece la altura del video al 100% del viewport height */
+  object-fit: cover;    /* Asegura que el video cubra todo el fondo, manteniendo su proporción */
+  z-index: -1;          /* Envía el video detrás de otros contenidos */
 }
+
 
 .cursoslink-a {
   color: white; /* Cambia el color de los enlaces a blanco */
