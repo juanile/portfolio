@@ -10,20 +10,31 @@ body {
   margin: 0;
   height: auto;
   opacity: 0.7; /* Baja la opacidad a 80% */
+  
 }
 
 .topmenu {
-  color: lightgray;
+  color: white;
   margin: 10px;
   padding: 20px;
   font-size: 20px;
   text-decoration: none;
+  
 }
 
 .topmenu:hover {
   color: white;
   font-weight: bolder;
   text-decoration: underline;
+  text-shadow: 
+  0 0 5px #fff,  /* Sombra suave */
+  0 0 10px #fff, /* Más resplandor */
+  0 0 20px red, /* Color fuerte */
+  0 0 30px red, /* Color más intenso */
+  0 0 40px red, /* Extensión del resplandor */
+  0 0 50px red, 
+  0 0 60px red, 
+  0 0 70px red;
 }
 
 .topdiv {
@@ -35,7 +46,10 @@ body {
   float: left;
   padding-left: 2cm;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
+  position: relative;
+  top: -35px; /* Ajusta este valor según sea necesario */
+  
 }
 
 .profile_name .contact_info {
@@ -44,6 +58,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: row;
+  
 }
 
 .contact_info img {
@@ -104,12 +119,6 @@ h2 {
    2px  2px 0 black; /* Contorno negro de 2px */
 }
 
-#about-me p {
-  font-size: 25px;
-  color: rgb(128, 128, 128);
-  margin-top: -1cm;
-}
-
 .profile_image {
   width: 550px;
   height: fit-content;
@@ -119,6 +128,7 @@ h2 {
 
 
 .myinfo {
+  font-size: 25px;
   color: white !important;
   text-shadow: 
     -2px -2px 0 black,  
@@ -157,7 +167,7 @@ h2 {
   height: auto;
   transition: transform 0.3s ease;
   font-size: 20px;
-  box-shadow: 0 3px 10px gray;
+  box-shadow: 0 3px 10px rgb(155, 9, 9);
   
 }
 
@@ -298,10 +308,18 @@ h2 {
 
 /* Buttons */
 
+
+#scrollToTopBtn {
+  border: 2px solid rgb(163, 0, 0) !important; /* Contorno rojo con grosor de 2px */
+  opacity: 0.9; /* Baja la opacidad a 90% */
+  box-shadow: 0 6px 18px rgba(206, 0, 0, 0.747); /* Sombra con desplazamiento y difuminado */
+}
+
+
+
 button {
   background-color: #fff;
-  border: 1px solid white; /* Cambiado a blanco */
-  color: white; /* Cambiado a blanco */
+  color: white;
   display: block;
   border-radius: 6px;
   text-align: center;
@@ -312,14 +330,14 @@ button {
 }
 
 button:hover {
-  background-color: white; /* Cambiado a blanco */
-  border: 1px solid white; /* Cambiado a blanco */
+  background-color: white;
   color: #fff;
   display: block;
   border-radius: 6px;
   text-align: center;
   cursor: pointer;
 }
+
 
 video {
   position: fixed;
