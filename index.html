@@ -9,53 +9,36 @@
 
 <body>
   <video muted autoplay loop>
-    <source src="video/2.mp4"
-    type="video/mp4">
+    <source src="video/2.mp4" type="video/mp4">
   </video>
   <!-- Navigation Bar -->
-  <nav>
-    <div id="home">
+  <header>
+    <nav class="navbar">
       <div class="profile_name">
-        Juan Leoncini
+
         <div class="contact_info">
-          <img src="imagenes/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope" />
+          <img src="imagenes/envelope.png" alt="Correo" />
           juanile97@gmail.com
         </div>
-        <div style="clear:both;"></div>
         <div class="contact_info">
-          <img src="imagenes/phone.png" alt="https://icons8.com/icon/124377/circled-envelope" />
+          <img src="imagenes/phone.png" alt="Teléfono" />
           092 324 228
-
+        </div>
+        <div class="contact_info">
+          <img src="imagenes/githubicon.png" alt="gitlogo" />
+          <a href="https://github.com/juanile" target="_blank" rel="noopener noreferrer">https://github.com/juanile</a>
         </div>
       </div>
-      <div class="topdiv">
-        <a class="topmenu" href="#about-me">Sobre mí</a>
-        <!-- Add the links for Skills, Projects and Recommendation here -->
-        <div class="topdiv">
-          <a class="topmenu" href="#preguntas">Habilidades</a>
-          <!-- Add the links for Skills, Projects and Recommendation here -->
-          <div class="topdiv">
-            <a class="topmenu" href="#idiomas">Idiomas</a>
-            <!-- Add the links for Skills, Projects and Recommendation here -->
-  
-          </div>
-
-        </div>
-        <div class="topdiv">
-          <a class="topmenu" href="#projects">Educación</a>
-          <!-- Add the links for Skills, Projects and Recommendation here -->
-
-        </div>
-        <div class="topdiv">
-          <a class="topmenu" href="#skills">Conocimientos Técnicos</a>
-          <!-- Add the links for Skills, Projects and Recommendation here -->
-
-        </div>
-
-
+      <button class="navbar-toggle" aria-label="Toggle navigation">☰</button>
+      <div class="navbar-menu">
+        <a class="nav-link" href="#about-me">Sobre mí</a>
+        <a class="nav-link" href="#preguntas">Habilidades</a>
+        <a class="nav-link" href="#idiomas">Idiomas</a>
+        <a class="nav-link" href="#projects">Educación</a>
+        <a class="nav-link" href="#skills">Conocimientos Técnicos</a>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <!-- About Me -->
   <section id="about-me" class="container">
@@ -68,10 +51,12 @@
         Hola, soy Juan Leoncini! <img src="imagenes/saludaremote.png" width="60px" />
       </h1>
       <p class="myinfo">
-        Soy Juan, con habilidades técnicas en desarrollo FullStack, especializado en Front End con JavaScript,HTML, 
-        CSS y en Back End con NodeJS y SQL. Como individuo proactivo, destaco en habilidades blandas comopensamiento crítico,
-         adaptabilidad, comunicación efectiva y trabajo en equipo. Mi compromiso con elaprendizaje continuo me impulsa a enfrentar nuevos retos con entusiasmo. 
-         Estoy emocionado por aplicar mis habilidades y contribuir al éxito de proyectos innovadores.
+        Soy Juan, con habilidades técnicas en desarrollo FullStack, especializado en Front End con JavaScript,HTML,
+        CSS y en Back End con NodeJS y SQL. Como individuo proactivo, destaco en habilidades blandas comopensamiento
+        crítico,
+        adaptabilidad, comunicación efectiva y trabajo en equipo. Mi compromiso con elaprendizaje continuo me impulsa a
+        enfrentar nuevos retos con entusiasmo.
+        Estoy emocionado por aplicar mis habilidades y contribuir al éxito de proyectos innovadores.
       </p>
     </div>
   </section>
@@ -83,49 +68,49 @@
 
     <div class="all_skills">
       <div class="skill">
-        <img src="imagenes/html5.png"/>
+        <img src="imagenes/html5.png" />
         <h6>HTML</h6>
-      </div>  
+      </div>
 
       <div class="skill">
-        <img src="imagenes/js.jpeg"/>
+        <img src="imagenes/js.jpeg" />
         <h6>JavaScript</h6>
-      </div>  
+      </div>
 
       <div class="skill">
-          <img src="imagenes/sql.png"/>
-          <h6>SQL</h6>
-        </div>
+        <img src="imagenes/sql.png" />
+        <h6>SQL</h6>
+      </div>
 
-        <div class="skill">
-          <img src="imagenes/node.png"/>
-          <h6>NodeJS</h6>
-        </div>
+      <div class="skill">
+        <img src="imagenes/node.png" />
+        <h6>NodeJS</h6>
+      </div>
 
-        <div class="skill">
-          <img src="imagenes/CSS3.png"/>
-          <h6>CSS3</h6>
-        </div>
-        <div class="skill">
-          <img src="imagenes/unity3dicon.png"/>
-          <h6>Unity3D</h6>
-        </div>
-        <div class="skill">
-          <img src="imagenes/csharp.png"/>
-          <h6>C#</h6>
-        </div>
-        <div class="skill">
-          <img src="imagenes/react.png"/>
-          <h6>React</h6>
-        </div>
-        <div class="skill">
-          <img src="imagenes/gitgithublogo.png"/>
-          <h6>Git&Github</h6>
-        </div>
-        <div class="skill">
-          <img src="imagenes/powerpointwordlexcel.jpg"/>
-          <h6>PowerPoint - Word - Excel</h6>
-        </div>
+      <div class="skill">
+        <img src="imagenes/CSS3.png" />
+        <h6>CSS3</h6>
+      </div>
+      <div class="skill">
+        <img src="imagenes/unity3dicon.png" />
+        <h6>Unity3D</h6>
+      </div>
+      <div class="skill">
+        <img src="imagenes/csharp.png" />
+        <h6>C#</h6>
+      </div>
+      <div class="skill">
+        <img src="imagenes/react.png" />
+        <h6>React</h6>
+      </div>
+      <div class="skill">
+        <img src="imagenes/gitgithublogo.png" />
+        <h6>Git&Github</h6>
+      </div>
+      <div class="skill">
+        <img src="imagenes/powerpointwordlexcel.jpg" />
+        <h6>PowerPoint - Word - Excel</h6>
+      </div>
 
 
     </div>
@@ -137,26 +122,26 @@
       Educación
     </h2>
     <div style="clear:both;"></div>
-  
-      <div id="projects-container" class="projects-container">
-        <div class="project-card">
-          <h3>Formal</h3>
-          <ul>
-            <li>Cursando Bachillerato, Liceo 27°, 2024</li>
-            <li>Ciclo básico, liceo °31 2012</li>
-          </ul>
-        </div>
-        <hr>
-        <div class="project-card">
-          <h3>Complementaria</h3>
-          <ul>
-            <li>Cursando Nivel 2, Jóvenes a programar, Ceibal, 2024</li>
-            <li>Nivel 1, Completado, Jóvenes a Programar, Ceibal, 2023</li>
-            <li>Videojuegos con Unity3D, Instituto Elemental, 2022</li>
-            <li>Habilidades digitales para la empleabilidad, INEFOP, 2021</li>
-          </ul>
-        </div>
-        <hr>
+
+    <div id="projects-container" class="projects-container">
+      <div class="project-card">
+        <h3>Formal</h3>
+        <ul>
+          <li>Cursando Bachillerato, Liceo 27°, 2024</li>
+          <li>Ciclo básico, liceo °31 2012</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="project-card">
+        <h3>Complementaria</h3>
+        <ul>
+          <li>Cursando Nivel 2, Jóvenes a programar, Ceibal, 2024</li>
+          <li>Nivel 1, Completado, Jóvenes a Programar, Ceibal, 2023</li>
+          <li>Videojuegos con Unity3D, Instituto Elemental, 2022</li>
+          <li>Habilidades digitales para la empleabilidad, INEFOP, 2021</li>
+        </ul>
+      </div>
+      <hr>
     </div>
   </section>
   <!-- CT -->
@@ -185,29 +170,29 @@
       </div>
     </div>
   </section>
-    <!-- Idiomas -->
+  <!-- Idiomas -->
+  <div style="clear:both;"></div>
+  <section class="projects" id="idiomas">
+    <h2>
+      Idiomas
+    </h2>
     <div style="clear:both;"></div>
-    <section class="projects" id="idiomas">
-      <h2>
-        Idiomas
-      </h2>
-      <div style="clear:both;"></div>
-  
-      <div id="projects-container" class="projects-container">
-        <div class="project-card">
-          <h3>Español Nativo</h3>
-        </div>
-        <hr>
-        <div class="project-card">
-          <h3>Inglés intermedio - B2</h3>
-        </div>
-      </div>
-    </section>
-    <div id="scrollToTopBtn" class="iconbutton">
-      <img src="imagenes/home.png" alt="Scroll to Top">
-    </div>
 
-    <script src="./script.js"></script>
+    <div id="projects-container" class="projects-container">
+      <div class="project-card">
+        <h3>Español Nativo</h3>
+      </div>
+      <hr>
+      <div class="project-card">
+        <h3>Inglés intermedio - B2</h3>
+      </div>
+    </div>
+  </section>
+  <div id="scrollToTopBtn" class="iconbutton">
+    <img src="imagenes/home.png" alt="Scroll to Top">
+  </div>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>

@@ -12,4 +12,13 @@ window.onscroll = function() {
 document.getElementById('scrollToTopBtn').onclick = function() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 };
-  
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const navbarToggle = document.querySelector('.navbar-toggle');
+  const navbarMenu = document.querySelector('.navbar-menu');
+
+  navbarToggle.addEventListener('click', function() {
+    navbarMenu.classList.toggle('active');
+  });
+});

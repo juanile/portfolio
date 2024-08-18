@@ -4,25 +4,76 @@ body {
 
 /* Navigation Bar */
 
-#home {
+/* Estilos básicos de la navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
   background-color: black;
-  padding: 2cm 0;
-  margin: 0;
-  height: auto;
-  opacity: 0.7;
-  
 }
 
 .topmenu {
+
   color: white;
-  margin: 10px;
-  padding: 20px;
-  font-size: 20px;
-  text-decoration: none;
-  
+  padding: 1rem;
+  opacity: 0.7;
 }
 
-.topmenu:hover {
+.profile_name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea el contenido hacia la izquierda */
+}
+
+.contact_info {
+  display: flex;
+  align-items: center;
+  margin: 0.3rem 0;
+}
+
+.contact_info img {
+  width: 20px;
+  margin-right: 0.5rem;
+}
+
+/* Color de los enlaces en la sección de contacto */
+.contact_info a {
+  color: white; /* Cambia el color de los enlaces a blanco */
+  text-decoration: none; /* Elimina el subrayado por defecto */
+}
+
+.contact_info a:hover {
+  color: white;
+  font-weight: bolder;
+  text-decoration: underline; /* Agrega subrayado al pasar el cursor */
+  text-shadow: 
+  0 0 5px #fff,  /* Sombra suave */
+  0 0 10px #fff, /* Más resplandor */
+  0 0 20px red, /* Color fuerte */
+  0 0 30px red, /* Color más intenso */
+  0 0 40px red, /* Extensión del resplandor */
+  0 0 50px red, 
+  0 0 60px red, 
+  0 0 70px red;
+}
+
+.navbar-menu {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row; /* Cambiado a fila para alinear horizontalmente */
+  align-items: center; /* Alinea verticalmente en el centro */
+  margin-right: 30px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0 1.2rem; /* Espacio entre los enlaces */
+  display: block;
+  font-size: 1.8rem; /* Tamaño de fuente aumentado */
+}
+
+.nav-link:hover {
   color: white;
   font-weight: bolder;
   text-decoration: underline;
@@ -37,35 +88,47 @@ body {
   0 0 70px red;
 }
 
-.topdiv {
-  float: right;
-  padding-right: 1cm;
-}
 
-.profile_name {
-  float: left;
-  padding-left: 2cm;
+/* Estilos para el botón de menú (para dispositivos móviles) */
+.navbar-toggle {
+  display: none;
+  background-color: #333;
   color: white;
-  font-size: 30px;
-  position: relative;
-  top: -35px; /* Ajusta este valor según sea necesario */
-  
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
 }
 
-.profile_name .contact_info {
-  font-size: 15px;
-  font-style: italic;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .profile_name {
+    text-align: center;
+  }
 }
 
-.contact_info img {
-  width: 25px;
-  margin-right: 10px;
-  float: left;
+@media (max-width: 988px) {
+  .navbar-menu {
+    margin-right: 10px;
+  }
 }
+
+
+
+
 
 /* Titles */
 
