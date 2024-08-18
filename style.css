@@ -11,6 +11,7 @@ body {
   background-color: black;
   color: white;
   padding: 1rem;
+  opacity: 0.5;
 }
 
 .profile_name {
@@ -22,7 +23,7 @@ body {
 .contact_info {
   display: flex;
   align-items: center;
-  margin: 0.5rem 0;
+  margin: 0.3rem 0;
 }
 
 .contact_info img {
@@ -31,6 +32,7 @@ body {
 }
 
 .navbar-menu {
+  font-size: 20px;
   display: flex;
   flex-direction: row; /* Cambiado a fila para alinear horizontalmente */
   align-items: center; /* Alinea verticalmente en el centro */
@@ -41,9 +43,9 @@ body {
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  margin: 0 0.5rem; /* Espacio entre los enlaces */
+  margin: 0 2.2rem; /* Espacio entre los enlaces */
   display: block;
-  font-size: 1.2rem; /* Tamaño de fuente aumentado */
+  font-size: 1.8rem; /* Tamaño de fuente aumentado */
 }
 
 .nav-link:hover {
