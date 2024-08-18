@@ -31,6 +31,27 @@ body {
   margin-right: 0.5rem;
 }
 
+/* Color de los enlaces en la sección de contacto */
+.contact_info a {
+  color: white; /* Cambia el color de los enlaces a blanco */
+  text-decoration: none; /* Elimina el subrayado por defecto */
+}
+
+.contact_info a:hover {
+  color: white;
+  font-weight: bolder;
+  text-decoration: underline; /* Agrega subrayado al pasar el cursor */
+  text-shadow: 
+  0 0 5px #fff,  /* Sombra suave */
+  0 0 10px #fff, /* Más resplandor */
+  0 0 20px red, /* Color fuerte */
+  0 0 30px red, /* Color más intenso */
+  0 0 40px red, /* Extensión del resplandor */
+  0 0 50px red, 
+  0 0 60px red, 
+  0 0 70px red;
+}
+
 .navbar-menu {
   font-size: 20px;
   display: flex;
