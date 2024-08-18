@@ -376,3 +376,26 @@ video {
   z-index: -1;
   object-fit: cover;
 }
+
+.cursoslink-a {
+  color: white; /* Cambia el color de los enlaces a blanco */
+  text-decoration: none; /* Elimina el subrayado por defecto */
+}
+
+.cursoslink-a:hover {
+  color: white;
+  font-weight: bolder;
+  text-decoration: underline; /* Agrega subrayado al pasar el cursor */
+  text-shadow: 
+    0 0 5px #fff,  /* Sombra suave */
+    0 0 10px #fff, /* Más resplandor */
+    0 0 20px white, /* Color fuerte */
+    0 0 30px white, /* Color más intenso */
+    0 0 40px white, /* Extensión del resplandor */
+    0 0 50px red, 
+    0 0 60px red, 
+    0 0 70px red;
+}
+
+
+
