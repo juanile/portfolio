@@ -187,6 +187,15 @@ h2 {
   margin: 5px;
 }
 
+@media (max-width: 992px) {
+  .profile_image {
+    width: 300%; /* Ajusta el tamaño de la imagen según sea necesario */
+    position: relative;
+    top: -100px; /* Ajusta el margen superior para evitar la superposición con el navbar */
+    vertical-align: top;
+  }
+}
+
 
 .myinfo {
   font-size: 25px;
@@ -208,6 +217,8 @@ h2 {
 }
 
 
+
+
 #skills h2 {
   text-shadow: 
   -2px -2px 0 black,  
@@ -218,7 +229,7 @@ h2 {
 }
 .skill {
   background-color: white;
-  border: 1px solid gray;
+  border: 2px solid transparent; /* Borde inicial transparente para evitar el cambio de tamaño */
   display: block;
   border-radius: 6px;
   text-align: center;
@@ -226,15 +237,19 @@ h2 {
   padding: 10px;
   width: 200px;
   height: auto;
-  transition: transform 0.3s ease;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
   font-size: 20px;
   box-shadow: 0 3px 10px rgb(155, 9, 9);
-  
+  cursor: pointer; /* Cambia el cursor al pasar sobre la carta */
 }
 
-.skill img:hover {
-  transform: scale(1.7);
+/* Estilo al pasar el ratón sobre la carta */
+.skill:hover {
+  border: 2px solid red; /* Borde rojo al pasar el ratón */
+  box-shadow: 0 3px 10px rgb(155, 9, 9), 0 0 15px red; /* Agrega un resplandor adicional */
 }
+
+
 
 .skill img {
   height: 35px;
@@ -490,10 +505,16 @@ video {
   padding: 20px;
   color: white; /* Color del texto */
   text-shadow: 
+    1px 1px 0 #000, /* Sombra negra 1 */
+    -1px -1px 0 #000, /* Sombra negra 2 */
+    1px -1px 0 #000, /* Sombra negra 3 */
+    -1px 1px 0 #000, /* Sombra negra 4 */
     0 0 10px rgba(255, 255, 255, 0.7), /* Sombra blanca */
     0 0 20px rgba(255, 255, 255, 0.5); /* Resplandor adicional */
+  
   text-transform: uppercase; /* Convertir texto a mayúsculas */
   letter-spacing: 2px; /* Espaciado entre letras */
-  font-family: 'Arial', sans-serif; /* Fuente */
+  font-family: 'REM' !important; /* Cambiar la fuente */
+  
 
 }
