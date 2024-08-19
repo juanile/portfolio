@@ -22,3 +22,23 @@ document.addEventListener('DOMContentLoaded', function() {
     navbarMenu.classList.toggle('active');
   });
 });
+
+
+// intro
+
+document.getElementById('enter-site-btn').addEventListener('click', function () {
+  // Desplazarse hacia arriba
+  window.scrollTo({ top: 0, behavior: 'auto' });
+
+
+
+  const overlay = document.getElementById('intro-overlay');
+  overlay.classList.add('hidden');
+
+  // Esperar hasta que la transición termine para remover el overlay del DOM
+  setTimeout(() => {
+    overlay.style.display = 'none';
+  }, 1000); // El tiempo debe coincidir con el tiempo de la transición en CSS
+});
+
+
