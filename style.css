@@ -191,6 +191,7 @@ h2 {
   vertical-align: middle;
   margin-top: 100px;
   margin-right: 100px;
+  cursor: pointer;
   /* Contorno negro */
   box-shadow: 0 0 0 4px black;
   /* Ajusta el tamaño del contorno con el valor de 4px */
