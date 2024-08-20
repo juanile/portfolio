@@ -27,6 +27,7 @@ body {
   display: flex;
   align-items: center;
   margin: 0.3rem 0;
+  margin-left: 20px;
 }
 
 .contact_info img {
@@ -117,30 +118,13 @@ body {
   margin-bottom: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1049px) {
   .navbar-menu {
-    display: none;
-    width: 100%;
-  }
+    margin-left: 100px;
 
-  .navbar-menu.active {
-    display: flex;
-  }
-
-  .navbar-toggle {
-    display: block;
-  }
-
-  .profile_name {
-    text-align: center;
   }
 }
 
-@media (max-width: 988px) {
-  .navbar-menu {
-    margin-right: 10px;
-  }
-}
 
 
 
