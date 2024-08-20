@@ -1,9 +1,9 @@
-
 body {
   font-family: "REM" !important;
   font-optical-sizing: auto;
 
 }
+
 /* Navigation Bar */
 
 /* Estilos básicos de la navegación */
@@ -19,7 +19,8 @@ body {
 .profile_name {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Alinea el contenido hacia la izquierda */
+  align-items: flex-start;
+  /* Alinea el contenido hacia la izquierda */
 }
 
 .contact_info {
@@ -35,30 +36,40 @@ body {
 
 /* Color de los enlaces en la sección de contacto */
 .contact_info a {
-  color: white; /* Cambia el color de los enlaces a blanco */
-  text-decoration: none; /* Elimina el subrayado por defecto */
+  color: white;
+  /* Cambia el color de los enlaces a blanco */
+  text-decoration: none;
+  /* Elimina el subrayado por defecto */
 }
 
 .contact_info a:hover {
   color: white;
   font-weight: bolder;
-  text-decoration: underline; /* Agrega subrayado al pasar el cursor */
-  text-shadow: 
-  0 0 5px #fff,  /* Sombra suave */
-  0 0 10px #fff, /* Más resplandor */
-  0 0 20px red, /* Color fuerte */
-  0 0 30px red, /* Color más intenso */
-  0 0 40px red, /* Extensión del resplandor */
-  0 0 50px red, 
-  0 0 60px red, 
-  0 0 70px red;
+  text-decoration: underline;
+  /* Agrega subrayado al pasar el cursor */
+  text-shadow:
+    0 0 5px #fff,
+    /* Sombra suave */
+    0 0 10px #fff,
+    /* Más resplandor */
+    0 0 20px red,
+    /* Color fuerte */
+    0 0 30px red,
+    /* Color más intenso */
+    0 0 40px red,
+    /* Extensión del resplandor */
+    0 0 50px red,
+    0 0 60px red,
+    0 0 70px red;
 }
 
 .navbar-menu {
   font-size: 20px;
   display: flex;
-  flex-direction: row; /* Cambiado a fila para alinear horizontalmente */
-  align-items: center; /* Alinea verticalmente en el centro */
+  flex-direction: row;
+  /* Cambiado a fila para alinear horizontalmente */
+  align-items: center;
+  /* Alinea verticalmente en el centro */
   margin-right: 30px;
 }
 
@@ -66,24 +77,31 @@ body {
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  margin: 0 1.2rem; /* Espacio entre los enlaces */
+  margin: 0 1.2rem;
+  /* Espacio entre los enlaces */
   display: block;
-  font-size: 1.8rem; /* Tamaño de fuente aumentado */
+  font-size: 1.8rem;
+  /* Tamaño de fuente aumentado */
 }
 
 .nav-link:hover {
   color: white;
   font-weight: bolder;
   text-decoration: underline;
-  text-shadow: 
-  0 0 5px #fff,  /* Sombra suave */
-  0 0 10px #fff, /* Más resplandor */
-  0 0 20px red, /* Color fuerte */
-  0 0 30px red, /* Color más intenso */
-  0 0 40px red, /* Extensión del resplandor */
-  0 0 50px red, 
-  0 0 60px red, 
-  0 0 70px red;
+  text-shadow:
+    0 0 5px #fff,
+    /* Sombra suave */
+    0 0 10px #fff,
+    /* Más resplandor */
+    0 0 20px red,
+    /* Color fuerte */
+    0 0 30px red,
+    /* Color más intenso */
+    0 0 40px red,
+    /* Extensión del resplandor */
+    0 0 50px red,
+    0 0 60px red,
+    0 0 70px red;
 }
 
 
@@ -138,7 +156,8 @@ h2 {
   font-size: 50px;
   text-align: center;
   float: left;
-  color: white !important; /* Cambiado a blanco */
+  color: white !important;
+  /* Cambiado a blanco */
   margin: 30px;
   margin-left: 60px;
   margin-top: 40px;
@@ -172,12 +191,14 @@ h2 {
 #about-me h1 {
   font-size: 65px;
   margin-top: 90px;
-  color: white; /* Cambiado a blanco */
-  text-shadow: 
-  -2px -2px 0 black,  
-   2px -2px 0 black,
-  -2px  2px 0 black,
-   2px  2px 0 black; /* Contorno negro de 2px */
+  color: white;
+  /* Cambiado a blanco */
+  text-shadow:
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+  /* Contorno negro de 2px */
 }
 
 .profile_image {
@@ -186,42 +207,53 @@ h2 {
   vertical-align: middle;
   margin-top: 100px;
   margin-right: 100px;
-    /* Contorno negro */
-  box-shadow: 0 0 0 4px black; /* Ajusta el tamaño del contorno con el valor de 4px */
-  box-shadow: 
-  0 0 5px black,  /* Sombra suave */
-  0 0 10px black, /* Más resplandor */
-  0 0 20px black, /* Color fuerte */
-  0 0 30px black, /* Color más intenso */
-  0 0 40px black, /* Extensión del resplandor */
-  0 0 10px red, 
-  0 0 20px red, 
-  0 0 20px red;
+  /* Contorno negro */
+  box-shadow: 0 0 0 4px black;
+  /* Ajusta el tamaño del contorno con el valor de 4px */
+  box-shadow:
+    0 0 5px black,
+    /* Sombra suave */
+    0 0 10px black,
+    /* Más resplandor */
+    0 0 20px black,
+    /* Color fuerte */
+    0 0 30px black,
+    /* Color más intenso */
+    0 0 40px black,
+    /* Extensión del resplandor */
+    0 0 10px red,
+    0 0 20px red,
+    0 0 20px red;
 }
 
 .profile_image:hover {
-  border: 2px solid red; /* Borde rojo al pasar el ratón */
-  box-shadow: 0 3px 10px rgb(155, 9, 9), 0 0 15px red; /* Agrega un resplandor adicional */
+  border: 2px solid red;
+  /* Borde rojo al pasar el ratón */
+  box-shadow: 0 3px 10px rgb(155, 9, 9), 0 0 15px red;
+  /* Agrega un resplandor adicional */
 }
 
 @media (max-width: 992px) {
   .profile_image {
-    width: 300%; /* Ajusta el tamaño de la imagen según sea necesario */
-    position: relative;
-    top: -100px; /* Ajusta el margen superior para evitar la superposición con el navbar */
-    vertical-align: top;
+    width: 250px;
+
+
   }
+
+
+
 }
 
 
 .myinfo {
   font-size: 25px;
   color: white !important;
-  text-shadow: 
-    -2px -2px 0 black,  
-     2px -2px 0 black,
-    -2px  2px 0 black,
-     2px  2px 0 black; /* Contorno negro de 2px */
+  text-shadow:
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+  /* Contorno negro de 2px */
 }
 
 
@@ -237,16 +269,19 @@ h2 {
 
 
 #skills h2 {
-  text-shadow: 
-  -2px -2px 0 black,  
-   2px -2px 0 black,
-  -2px  2px 0 black,
-   2px  2px 0 black; /* Contorno negro de 2px */
+  text-shadow:
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+  /* Contorno negro de 2px */
 
 }
+
 .skill {
   background-color: white;
-  border: 2px solid transparent; /* Borde inicial transparente para evitar el cambio de tamaño */
+  border: 2px solid transparent;
+  /* Borde inicial transparente para evitar el cambio de tamaño */
   display: block;
   border-radius: 6px;
   text-align: center;
@@ -257,13 +292,16 @@ h2 {
   transition: border 0.3s ease, box-shadow 0.3s ease;
   font-size: 20px;
   box-shadow: 0 3px 10px rgb(155, 9, 9);
-  cursor: pointer; /* Cambia el cursor al pasar sobre la carta */
+  cursor: pointer;
+  /* Cambia el cursor al pasar sobre la carta */
 }
 
 /* Estilo al pasar el ratón sobre la carta */
 .skill:hover {
-  border: 2px solid red; /* Borde rojo al pasar el ratón */
-  box-shadow: 0 3px 10px rgb(155, 9, 9), 0 0 15px red; /* Agrega un resplandor adicional */
+  border: 2px solid red;
+  /* Borde rojo al pasar el ratón */
+  box-shadow: 0 3px 10px rgb(155, 9, 9), 0 0 15px red;
+  /* Agrega un resplandor adicional */
 }
 
 
@@ -299,11 +337,12 @@ h2 {
 
 
 .projects h2 {
-  text-shadow: 
-  -2px -2px 0 black,  
-   2px -2px 0 black,
-  -2px  2px 0 black,
-   2px  2px 0 black; /* Contorno negro de 2px */
+  text-shadow:
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+  /* Contorno negro de 2px */
 
 }
 
@@ -321,13 +360,15 @@ h2 {
 .project-card {
   margin: 0 15px 15px 30px;
   padding-bottom: 5px;
-  color: white; /* Cambiado a blanco */
+  color: white;
+  /* Cambiado a blanco */
   font-style: oblique;
-    text-shadow: 
-  -2px -2px 0 black,  
-   2px -2px 0 black,
-  -2px  2px 0 black,
-   2px  2px 0 black; /* Contorno negro de 2px */
+  text-shadow:
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+  /* Contorno negro de 2px */
 
 }
 
@@ -348,7 +389,8 @@ h2 {
   width: 48px;
   height: 48px;
   border-radius: 100%;
-  background-color: white; /* Cambiado a blanco */
+  background-color: white;
+  /* Cambiado a blanco */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -362,9 +404,12 @@ h2 {
 .iconbutton img {
   width: 30px;
   height: 34px;
-  margin: auto; /* Centra la imagen automáticamente */
-  display: block; /* Asegura que la imagen esté alineada correctamente */
-  margin-top: 4px; /* Ajusta este valor para mover la imagen hacia abajo */
+  margin: auto;
+  /* Centra la imagen automáticamente */
+  display: block;
+  /* Asegura que la imagen esté alineada correctamente */
+  margin-top: 4px;
+  /* Ajusta este valor para mover la imagen hacia abajo */
 
 }
 
@@ -372,9 +417,12 @@ h2 {
 
 
 #scrollToTopBtn {
-  border: 2px solid rgb(163, 0, 0) !important; /* Contorno rojo con grosor de 2px */
-  opacity: 0.9; /* Baja la opacidad a 90% */
-  box-shadow: 0 6px 18px rgba(206, 0, 0, 0.747); /* Sombra con desplazamiento y difuminado */
+  border: 2px solid rgb(163, 0, 0) !important;
+  /* Contorno rojo con grosor de 2px */
+  opacity: 0.9;
+  /* Baja la opacidad a 90% */
+  box-shadow: 0 6px 18px rgba(206, 0, 0, 0.747);
+  /* Sombra con desplazamiento y difuminado */
 }
 
 
@@ -402,33 +450,48 @@ button:hover {
 
 
 video {
-  position: fixed;      /* Mantiene el video fijo en la pantalla */
-  top: 0;               /* Alinea el video con la parte superior de la ventana */
-  left: 0;              /* Alinea el video con la parte izquierda de la ventana */
-  width: 100vw;         /* Establece el ancho del video al 100% del viewport width */
-  height: 100vh;        /* Establece la altura del video al 100% del viewport height */
-  object-fit: cover;    /* Asegura que el video cubra todo el fondo, manteniendo su proporción */
-  z-index: -1;          /* Envía el video detrás de otros contenidos */
+  position: fixed;
+  /* Mantiene el video fijo en la pantalla */
+  top: 0;
+  /* Alinea el video con la parte superior de la ventana */
+  left: 0;
+  /* Alinea el video con la parte izquierda de la ventana */
+  width: 100vw;
+  /* Establece el ancho del video al 100% del viewport width */
+  height: 100vh;
+  /* Establece la altura del video al 100% del viewport height */
+  object-fit: cover;
+  /* Asegura que el video cubra todo el fondo, manteniendo su proporción */
+  z-index: -1;
+  /* Envía el video detrás de otros contenidos */
 }
 
 
 .cursoslink-a {
-  color: white; /* Cambia el color de los enlaces a blanco */
-  text-decoration: none; /* Elimina el subrayado por defecto */
+  color: white;
+  /* Cambia el color de los enlaces a blanco */
+  text-decoration: none;
+  /* Elimina el subrayado por defecto */
 }
 
 .cursoslink-a:hover {
   color: white;
   font-weight: bolder;
-  text-decoration: underline; /* Agrega subrayado al pasar el cursor */
-  text-shadow: 
-    0 0 5px #fff,  /* Sombra suave */
-    0 0 10px #fff, /* Más resplandor */
-    0 0 20px white, /* Color fuerte */
-    0 0 30px white, /* Color más intenso */
-    0 0 40px white, /* Extensión del resplandor */
-    0 0 50px red, 
-    0 0 60px red, 
+  text-decoration: underline;
+  /* Agrega subrayado al pasar el cursor */
+  text-shadow:
+    0 0 5px #fff,
+    /* Sombra suave */
+    0 0 10px #fff,
+    /* Más resplandor */
+    0 0 20px white,
+    /* Color fuerte */
+    0 0 30px white,
+    /* Color más intenso */
+    0 0 40px white,
+    /* Extensión del resplandor */
+    0 0 50px red,
+    0 0 60px red,
     0 0 70px red;
 }
 
@@ -455,8 +518,10 @@ video {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Asegura que el video cubra todo el fondo */
-  z-index: -1; /* Coloca el video detrás del contenido de la introducción */
+  object-fit: cover;
+  /* Asegura que el video cubra todo el fondo */
+  z-index: -1;
+  /* Coloca el video detrás del contenido de la introducción */
 }
 
 
@@ -466,18 +531,23 @@ video {
 }
 
 .intro-content {
-  z-index: 1; /* Coloca el contenido por encima del video */
-  color: white; /* Asegura que el texto sea visible */
-  text-align: center; /* Centra el texto y el botón horizontalmente */
+  z-index: 1;
+  /* Coloca el contenido por encima del video */
+  color: white;
+  /* Asegura que el texto sea visible */
+  text-align: center;
+  /* Centra el texto y el botón horizontalmente */
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra el contenido horizontalmente */
+  align-items: center;
+  /* Centra el contenido horizontalmente */
 }
 
 
 
 .button_slide {
-  background-color: black !important; /* Cambia el fondo a negro */
+  background-color: black !important;
+  /* Cambia el fondo a negro */
   color: #FFF !important;
   border: 2px solid red !important;
   border-radius: 0px !important;
@@ -510,18 +580,28 @@ video {
   font-size: 100px;
   margin: 0;
   padding: 20px;
-  color: white; /* Color del texto */
-  text-shadow: 
-    1px 1px 0 #000, /* Sombra negra 1 */
-    -1px -1px 0 #000, /* Sombra negra 2 */
-    1px -1px 0 #000, /* Sombra negra 3 */
-    -1px 1px 0 #000, /* Sombra negra 4 */
-    0 0 10px rgba(255, 255, 255, 0.7), /* Sombra blanca */
-    0 0 20px rgba(255, 255, 255, 0.5); /* Resplandor adicional */
-  
-  text-transform: uppercase; /* Convertir texto a mayúsculas */
-  letter-spacing: 2px; /* Espaciado entre letras */
-  font-family: 'REM' !important; /* Cambiar la fuente */
-  
+  color: white;
+  /* Color del texto */
+  text-shadow:
+    1px 1px 0 #000,
+    /* Sombra negra 1 */
+    -1px -1px 0 #000,
+    /* Sombra negra 2 */
+    1px -1px 0 #000,
+    /* Sombra negra 3 */
+    -1px 1px 0 #000,
+    /* Sombra negra 4 */
+    0 0 10px rgba(255, 255, 255, 0.7),
+    /* Sombra blanca */
+    0 0 20px rgba(255, 255, 255, 0.5);
+  /* Resplandor adicional */
+
+  text-transform: uppercase;
+  /* Convertir texto a mayúsculas */
+  letter-spacing: 2px;
+  /* Espaciado entre letras */
+  font-family: 'REM' !important;
+  /* Cambiar la fuente */
+
 
 }
