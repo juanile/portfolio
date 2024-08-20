@@ -218,9 +218,9 @@ h2 {
   /* Agrega un resplandor adicional */
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1199px) {
   .profile_image {
-    width: 250px;
+    width: 300px;
 
 
   }
@@ -273,15 +273,7 @@ h2 {
 
 
 
-#skills h2 {
-  text-shadow:
-    -2px -2px 0 black,
-    2px -2px 0 black,
-    -2px 2px 0 black,
-    2px 2px 0 black;
-  /* Contorno negro de 2px */
 
-}
 
 .skill {
   background-color: white;
@@ -293,7 +285,7 @@ h2 {
   margin: 50px;
   padding: 10px;
   width: 200px;
-  height: auto;
+  height: 110px;
   transition: border 0.3s ease, box-shadow 0.3s ease;
   font-size: 20px;
   box-shadow: 0 3px 10px rgb(155, 9, 9);
@@ -487,7 +479,7 @@ video {
 }
 
 .cursoslink-a:hover {
-  color: white;
+  color: red;
   font-weight: bolder;
   text-decoration: underline;
   /* Agrega subrayado al pasar el cursor */
