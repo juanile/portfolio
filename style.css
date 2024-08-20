@@ -581,6 +581,7 @@ video {
 
 
 .bienvenido {
+  user-select: none;
   font-size: 100px;
   margin: 0;
   padding: 20px;
