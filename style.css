@@ -230,7 +230,9 @@ h2 {
 }
 
 
-.myinfo {
+.infocontainer {
+  width: 100%; /* Este ancho puede ser ajustado según lo que necesites */
+  display: flex !important;
   font-size: 25px;
   color: white !important;
   text-shadow:
@@ -240,6 +242,19 @@ h2 {
     2px 2px 0 black;
   /* Contorno negro de 2px */
 }
+
+@media (max-width: 991px) {
+  .myinfo {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    width: 300% !important;
+    text-align: left !important;
+    margin-left: -350px !important;
+  }
+}
+
 
 
 /* Skills */
