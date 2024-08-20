@@ -181,10 +181,27 @@ h2 {
 }
 
 .profile_image {
-  width: 550px;
+  width: 500px;
   height: fit-content;
   vertical-align: middle;
-  margin: 5px;
+  margin-top: 100px;
+  margin-right: 100px;
+    /* Contorno negro */
+  box-shadow: 0 0 0 4px black; /* Ajusta el tamaño del contorno con el valor de 4px */
+  box-shadow: 
+  0 0 5px black,  /* Sombra suave */
+  0 0 10px black, /* Más resplandor */
+  0 0 20px black, /* Color fuerte */
+  0 0 30px black, /* Color más intenso */
+  0 0 40px black, /* Extensión del resplandor */
+  0 0 10px red, 
+  0 0 20px red, 
+  0 0 20px red;
+}
+
+.profile_image:hover {
+  border: 2px solid red; /* Borde rojo al pasar el ratón */
+  box-shadow: 0 3px 10px rgb(155, 9, 9), 0 0 15px red; /* Agrega un resplandor adicional */
 }
 
 @media (max-width: 992px) {
