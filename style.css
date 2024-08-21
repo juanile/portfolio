@@ -565,3 +565,12 @@ video {
 ul li {
   padding-bottom: 10px; /* Ajusta este valor según tus necesidades */
 }
+
+
+.educacionlista {
+  width: 85%;
+  display: flex !important;
+  justify-content: center !important; /* Centra el contenido horizontalmente */
+  align-items: center !important; /* Centra el contenido verticalmente (si el contenedor tiene una altura establecida) */
+  text-align: left !important; /* Alinea el texto a la izquierda */
+}
