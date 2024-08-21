@@ -41,4 +41,12 @@ document.getElementById('enter-site-btn').addEventListener('click', function () 
   }, 1000); // El tiempo debe coincidir con el tiempo de la transición en CSS
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('enter-site-btn').addEventListener('click', () => {
+    document.getElementById('intro-overlay').classList.add('hidden');
+    document.getElementById('mainContent').classList.remove('hidden');
+  });
+});
+
+
 
