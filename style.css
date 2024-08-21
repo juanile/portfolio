@@ -376,6 +376,10 @@ h2 {
 
 }
 
+.educacionletra {
+  margin-bottom: 40px !important; /* Ajusta este valor según tus necesidades */
+}
+
 .project-card h3 {
   font-size: 25px;
   margin-left: 30px;
@@ -609,4 +613,8 @@ video {
   /* Cambiar la fuente */
 
 
+}
+
+ul li {
+  padding-bottom: 10px; /* Ajusta este valor según tus necesidades */
 }
