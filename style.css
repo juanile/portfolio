@@ -23,6 +23,15 @@ body {
   /* Alinea el contenido hacia la izquierda */
 }
 
+@media (max-width: 1049px) {
+  .profile_name {
+    display: flex;
+    flex-direction: row; /* Cambia la dirección de flex a una fila (horizontal) */
+    align-items: center; /* Alinea verticalmente el contenido al centro */
+    margin-left: 180px;
+  }
+}
+
 .contact_info {
   display: flex;
   align-items: center;
@@ -62,6 +71,14 @@ body {
     0 0 50px red,
     0 0 60px red,
     0 0 70px red;
+}
+
+
+@media (max-width: 1049px) {
+  .navbar {
+    height: 120px;
+
+  }
 }
 
 .navbar-menu {
@@ -229,14 +246,25 @@ h2 {
 }
 
 @media (max-width: 991px) {
+  .infocontainer {
+    width: 300px;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+
+
+  }
+}
+
+@media (max-width: 991px) {
   .myinfo {
     display: flex !important;
     flex-direction: row !important;
     align-items: flex-start !important;
     justify-content: flex-start !important;
-    width: 300% !important;
     text-align: left !important;
-    margin-left: -350px !important;
+    margin-left: -370px !important;
   }
 }
 
