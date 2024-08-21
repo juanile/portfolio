@@ -26,8 +26,10 @@ body {
 @media (max-width: 1049px) {
   .profile_name {
     display: flex;
-    flex-direction: row; /* Cambia la dirección de flex a una fila (horizontal) */
-    align-items: center; /* Alinea verticalmente el contenido al centro */
+    flex-direction: row;
+    /* Cambia la dirección de flex a una fila (horizontal) */
+    align-items: center;
+    /* Alinea verticalmente el contenido al centro */
     margin-left: 180px;
   }
 }
@@ -94,7 +96,8 @@ body {
 @media (max-width: 854px) {
   .navbar-menu {
     margin-right: -100px;
-    transform: translateX(-80px); /* Mueve 20px hacia la izquierda */
+    transform: translateX(-80px);
+    /* Mueve 20px hacia la izquierda */
 
 
   }
@@ -243,7 +246,8 @@ h2 {
 
 
 .infocontainer {
-  width: 100%; /* Este ancho puede ser ajustado según lo que necesites */
+  width: 100%;
+  /* Este ancho puede ser ajustado según lo que necesites */
   display: flex !important;
   font-size: 25px;
   color: white !important;
@@ -281,31 +285,24 @@ h2 {
 
 /* dispositivos iPad Air y Asus */
 
+@media (max-width: 854px) and (min-width: 822px) {
+  .all_skills {
+    transform: translateX(70px);
+  }
+}
+
 @media (max-width: 821px) {
   .profile_name {
     margin-right: -100px;
-    transform: translateX(-80px); 
-
-
+    transform: translateX(-80px);
   }
-  .all_skills {
-    transform: translateX(50px); 
 
+  .all_skills {
+    transform: translateX(50px);
   }
 }
 
-@media (max-width: 854px) {
-  .profile_name {
-    margin-right: -100px;
-    transform: translateX(-80px); 
 
-
-  }
-  .all_skills {
-    transform: translateX(70px); 
-
-  }
-}
 
 
 
@@ -320,7 +317,8 @@ h2 {
 }
 
 .all_skills h6 {
-  padding-top: 20px; /* Ajusta este valor según el espacio que quieras */
+  padding-top: 20px;
+  /* Ajusta este valor según el espacio que quieras */
 
 }
 
@@ -410,7 +408,8 @@ h2 {
 }
 
 .educacionletra {
-  margin-bottom: 40px !important; /* Ajusta este valor según tus necesidades */
+  margin-bottom: 40px !important;
+  /* Ajusta este valor según tus necesidades */
 }
 
 .project-card h3 {
@@ -458,12 +457,15 @@ h2 {
 
 
 #scrollToTopBtn {
-  border: 2px solid rgb(163, 0, 0) !important; /* Contorno rojo con grosor de 2px */
-  transition: box-shadow 0.3s ease; /* Transición suave para el efecto hover */
+  border: 2px solid rgb(163, 0, 0) !important;
+  /* Contorno rojo con grosor de 2px */
+  transition: box-shadow 0.3s ease;
+  /* Transición suave para el efecto hover */
 }
 
 #scrollToTopBtn:hover {
-  box-shadow: 0 6px 68px rgba(163, 0, 0, 0.9); /* Sombra con color rojo más intenso en hover */
+  box-shadow: 0 6px 68px rgba(163, 0, 0, 0.9);
+  /* Sombra con color rojo más intenso en hover */
 }
 
 
@@ -509,7 +511,8 @@ video {
 
 
 .cursoslink-a {
-  color: #007bff; /* Color del enlace en estado normal */
+  color: #007bff;
+  /* Color del enlace en estado normal */
 }
 
 .cursoslink-a:hover {
@@ -631,7 +634,8 @@ video {
 }
 
 ul li {
-  padding-bottom: 10px; /* Ajusta este valor según tus necesidades */
+  padding-bottom: 10px;
+  /* Ajusta este valor según tus necesidades */
 }
 
 
@@ -644,5 +648,5 @@ ul li {
   .infocontainer {
     margin-top: 20px;
 
-}
+  }
 }
