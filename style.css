@@ -202,7 +202,7 @@ h2 {
   height: fit-content;
   vertical-align: middle;
   margin-top: 100px;
-  margin-right: 100px;
+  margin-right: 50px;
   cursor: pointer;
   /* Contorno negro */
   box-shadow: 0 0 0 4px black;
@@ -275,6 +275,7 @@ h2 {
     justify-content: flex-start !important;
     text-align: left !important;
     margin-left: -370px !important;
+    transform: translateX(35px);
   }
 }
 
