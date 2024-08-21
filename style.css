@@ -64,15 +64,15 @@ body {
     /* Sombra suave */
     0 0 10px #fff,
     /* Más resplandor */
-    0 0 20px red,
+    0 0 20px rgb(1, 46, 54),
     /* Color fuerte */
-    0 0 30px red,
+    0 0 30px rgb(1, 46, 54),
     /* Color más intenso */
-    0 0 40px red,
+    0 0 40px rgb(1, 46, 54),
     /* Extensión del resplandor */
-    0 0 50px red,
-    0 0 60px red,
-    0 0 70px red;
+    0 0 50px rgb(1, 46, 54),
+    0 0 60px rgb(1, 46, 54),
+    0 0 70px rgb(1, 46, 54);
 }
 
 
@@ -124,15 +124,15 @@ body {
     /* Sombra suave */
     0 0 10px #fff,
     /* Más resplandor */
-    0 0 20px red,
+    0 0 20px rgb(1, 46, 54),
     /* Color fuerte */
-    0 0 30px red,
+    0 0 30px rgb(1, 46, 54),
     /* Color más intenso */
-    0 0 40px red,
+    0 0 40px rgb(1, 46, 54),
     /* Extensión del resplandor */
-    0 0 50px red,
-    0 0 60px red,
-    0 0 70px red;
+    0 0 50px rgb(1, 46, 54),
+    0 0 60px rgb(1, 46, 54),
+    0 0 70px rgb(1, 46, 54);
 }
 
 
@@ -201,6 +201,7 @@ h2 {
 }
 
 .profile_image {
+  border: 2px solid transparent;
   width: 500px;
   height: fit-content;
   vertical-align: middle;
@@ -221,15 +222,15 @@ h2 {
     /* Color más intenso */
     0 0 40px black,
     /* Extensión del resplandor */
-    0 0 10px red,
-    0 0 20px red,
-    0 0 20px red;
+    0 0 10px rgb(1, 46, 54),
+    0 0 20px rgb(1, 46, 54),
+    0 0 20px rgb(1, 46, 54);
 }
 
 .profile_image:hover {
-  border: 2px solid red;
+  border: 2px solid rgb(1, 46, 54);
   /* Borde rojo al pasar el ratón */
-  box-shadow: 0 3px 10px rgb(155, 9, 9), 0 0 15px red;
+  box-shadow: 0 3px 10px rgb(1, 46, 54), 0 0 15px rgb(1, 46, 54);
   /* Agrega un resplandor adicional */
 }
 
@@ -340,16 +341,16 @@ h2 {
   height: 110px;
   transition: border 0.3s ease, box-shadow 0.3s ease;
   font-size: 20px;
-  box-shadow: 0 3px 10px rgb(155, 9, 9);
+  box-shadow: 0 3px 10px white;
   cursor: pointer;
   /* Cambia el cursor al pasar sobre la carta */
 }
 
 /* Estilo al pasar el ratón sobre la carta */
 .skill:hover {
-  border: 2px solid red;
+  border: 2px solid rgb(0, 26, 97);
   /* Borde rojo al pasar el ratón */
-  box-shadow: 0 3px 10px rgb(155, 9, 9), 0 0 15px red;
+  box-shadow: 0 3px 10px rgb(0, 26, 97), 0 0 15px rgb(0, 26, 97);
   /* Agrega un resplandor adicional */
 }
 
@@ -457,15 +458,16 @@ h2 {
 
 
 #scrollToTopBtn {
-  border: 2px solid rgb(163, 0, 0) !important;
+  border: 2px solid rgb(0, 26, 97) !important;
   /* Contorno rojo con grosor de 2px */
   transition: box-shadow 0.3s ease;
   /* Transición suave para el efecto hover */
 }
 
 #scrollToTopBtn:hover {
-  box-shadow: 0 6px 68px rgba(163, 0, 0, 0.9);
+  box-shadow: 0 10px 100px rgb(241, 241, 241);
   /* Sombra con color rojo más intenso en hover */
+  
 }
 
 
@@ -516,7 +518,7 @@ video {
 }
 
 .cursoslink-a:hover {
-  color: red;
+  color: rgb(1, 46, 54);
   font-weight: bolder;
   text-decoration: underline;
   /* Agrega subrayado al pasar el cursor */
@@ -525,15 +527,15 @@ video {
     /* Sombra suave */
     0 0 10px #fff,
     /* Más resplandor */
-    0 0 20px white,
+    0 0 20px rgb(1, 46, 54),
     /* Color fuerte */
-    0 0 30px white,
+    0 0 30px rgb(1, 46, 54),
     /* Color más intenso */
-    0 0 40px white,
+    0 0 40px rgb(1, 46, 54),
     /* Extensión del resplandor */
-    0 0 50px red,
-    0 0 60px red,
-    0 0 70px red;
+    0 0 50px rgb(1, 46, 54),
+    0 0 60px rgb(1, 46, 54),
+    0 0 70px rgb(1, 46, 54);
 }
 
 /* intro */
