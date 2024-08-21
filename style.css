@@ -476,10 +476,7 @@ video {
 
 
 .cursoslink-a {
-  color: white;
-  /* Cambia el color de los enlaces a blanco */
-  text-decoration: none;
-  /* Elimina el subrayado por defecto */
+  color: #007bff; /* Color del enlace en estado normal */
 }
 
 .cursoslink-a:hover {
