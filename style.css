@@ -620,3 +620,10 @@ ul li {
   width: 85%;
 
 }
+
+@media (min-width: 992px) {
+  .infocontainer {
+    margin-top: 20px;
+
+}
+}
