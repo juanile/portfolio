@@ -553,16 +553,7 @@ video {
   transition: opacity 1s ease, visibility 1s ease;
 }
 
-.hidden {
-  display: none;
-}
 
-
-
-#intro-overlay.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
 
 .intro-content {
   z-index: 1;
