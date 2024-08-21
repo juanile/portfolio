@@ -553,6 +553,9 @@ video {
   transition: opacity 1s ease, visibility 1s ease;
 }
 
+.hidden {
+  display: none;
+}
 
 
 
