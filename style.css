@@ -389,12 +389,12 @@ h2 {
 
 
 #scrollToTopBtn {
-  border: 2px solid rgb(163, 0, 0) !important;
-  /* Contorno rojo con grosor de 2px */
-  opacity: 0.9;
-  /* Baja la opacidad a 90% */
-  box-shadow: 0 6px 18px rgba(206, 0, 0, 0.747);
-  /* Sombra con desplazamiento y difuminado */
+  border: 2px solid rgb(163, 0, 0) !important; /* Contorno rojo con grosor de 2px */
+  transition: box-shadow 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+#scrollToTopBtn:hover {
+  box-shadow: 0 6px 68px rgba(163, 0, 0, 0.9); /* Sombra con color rojo más intenso en hover */
 }
 
 
