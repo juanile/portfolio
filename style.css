@@ -1,18 +1,55 @@
-body {
-  font-family: "REM" !important;
-  font-optical-sizing: auto;
+/* ==================================================
+   PORTFOLIO - HOJA DE ESTILOS
+   Organizada por secciones y sin !important innecesarios.
+   Se conservaron los ajustes visuales y responsive existentes.
+================================================== */
 
+
+/* ==================================================
+   1. CONFIGURACIÓN GENERAL
+================================================== */
+
+body {
+  font-family: "REM";
+  font-optical-sizing: auto;
 }
 
-/* Navigation Bar */
+h2 {
+  float: left;
+  margin: 40px 30px 0 60px;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
 
-/* Estilos básicos de la navegación */
+.container {
+  display: flex;
+}
+
+ul li {
+  padding-bottom: 10px;
+}
+
+.educacionlista {
+  width: 85%;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+/* ==================================================
+   2. BARRA DE NAVEGACIÓN
+================================================== */
+
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: black;
-  color: white;
   padding: 1rem;
+  color: white;
+  background-color: black;
   opacity: 0.7;
 }
 
@@ -20,25 +57,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* Alinea el contenido hacia la izquierda */
-}
-
-@media (max-width: 1049px) {
-  .profile_name {
-    display: flex;
-    flex-direction: row;
-    /* Cambia la dirección de flex a una fila (horizontal) */
-    align-items: center;
-    /* Alinea verticalmente el contenido al centro */
-    margin-left: 180px;
-  }
 }
 
 .contact_info {
   display: flex;
   align-items: center;
-  margin: 0.3rem 0;
-  margin-left: 20px;
+  margin: 0.3rem 0 0.3rem 20px;
 }
 
 .contact_info img {
@@ -46,245 +70,553 @@ body {
   margin-right: 0.5rem;
 }
 
-/* Color de los enlaces en la sección de contacto */
 .contact_info a {
   color: white;
-  /* Cambia el color de los enlaces a blanco */
   text-decoration: none;
-  /* Elimina el subrayado por defecto */
 }
 
-.contact_info a:hover {
-  color: white;
-  font-weight: bolder;
-  text-decoration: underline;
-  /* Agrega subrayado al pasar el cursor */
-  text-shadow:
-    0 0 5px #fff,
-    /* Sombra suave */
-    0 0 10px #fff,
-    /* Más resplandor */
-    0 0 20px rgb(1, 46, 54),
-    /* Color fuerte */
-    0 0 30px rgb(1, 46, 54),
-    /* Color más intenso */
-    0 0 40px rgb(1, 46, 54),
-    /* Extensión del resplandor */
-    0 0 50px rgb(1, 46, 54),
-    0 0 60px rgb(1, 46, 54),
-    0 0 70px rgb(1, 46, 54);
-}
-
-
-@media (max-width: 1049px) {
-  .navbar {
-    height: 120px;
-
-  }
-}
-
-.navbar-menu {
-  font-size: 20px;
-  display: flex;
-  flex-direction: row;
-  /* Cambiado a fila para alinear horizontalmente */
-  align-items: center;
-  /* Alinea verticalmente en el centro */
-  margin-right: 30px;
-}
-
-@media (max-width: 854px) {
-  .navbar-menu {
-    margin-right: -100px;
-    transform: translateX(-80px);
-    /* Mueve 20px hacia la izquierda */
-
-
-  }
-}
-
-
-.nav-link {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  margin: 0 1.2rem;
-  /* Espacio entre los enlaces */
-  display: block;
-  font-size: 1.8rem;
-  /* Tamaño de fuente aumentado */
-}
-
+.contact_info a:hover,
 .nav-link:hover {
   color: white;
   font-weight: bolder;
   text-decoration: underline;
   text-shadow:
     0 0 5px #fff,
-    /* Sombra suave */
     0 0 10px #fff,
-    /* Más resplandor */
     0 0 20px rgb(1, 46, 54),
-    /* Color fuerte */
     0 0 30px rgb(1, 46, 54),
-    /* Color más intenso */
     0 0 40px rgb(1, 46, 54),
-    /* Extensión del resplandor */
+    0 0 50px rgb(1, 46, 54),
+    0 0 60px rgb(1, 46, 54),
+    0 0 70px rgb(1, 46, 54);
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 30px;
+  font-size: 20px;
+}
+
+.nav-link {
+  display: block;
+  margin: 0 1.2rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.navbar-toggle {
+  display: none;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+/* ==================================================
+   3. SOBRE MÍ
+================================================== */
+
+#about-me h1 {
+  margin-top: 90px;
+  color: white;
+  font-size: 65px;
+  text-shadow:
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+}
+
+.profile_image {
+  width: 500px;
+  height: fit-content;
+  margin-top: 100px;
+  margin-right: 50px;
+  border: 2px solid transparent;
+  box-shadow:
+    0 0 5px black,
+    0 0 10px black,
+    0 0 20px black,
+    0 0 30px black,
+    0 0 40px black,
+    0 0 10px rgb(1, 46, 54),
+    0 0 20px rgb(1, 46, 54),
+    0 0 20px rgb(1, 46, 54);
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.profile_image:hover {
+  border-color: rgb(1, 46, 54);
+  box-shadow: 0 3px 10px rgb(1, 46, 54), 0 0 15px rgb(1, 46, 54);
+}
+
+.infocontainer {
+  display: flex;
+  width: 100%;
+  color: white;
+  font-size: 25px;
+  text-shadow:
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+}
+
+
+/* ==================================================
+   4. CONOCIMIENTOS TÉCNICOS
+================================================== */
+
+.skill-category {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.skill-category h3 {
+  margin-bottom: 20px;
+  margin-left: 60px;
+  color: white;
+  font-size: 28px;
+  text-shadow:
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+}
+
+.all_skills {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 45px;
+}
+
+.skill-category .all_skills {
+  justify-content: flex-start;
+  margin-left: 45px;
+  transform: none;
+}
+
+.all_skills h6 {
+  padding-top: 20px;
+}
+
+.skill {
+  display: block;
+  width: 200px;
+  height: 110px;
+  margin: 50px;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0 3px 10px white;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+  border-color: rgb(0, 26, 97);
+  box-shadow: 0 3px 10px rgb(0, 26, 97), 0 0 15px rgb(0, 26, 97);
+}
+
+.skill img {
+  height: 35px;
+}
+
+
+/* ==================================================
+   5. PROYECTOS PERSONALES Y EDUCATIVOS
+================================================== */
+
+.portfolio-projects {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 40px 0 60px;
+  clear: both;
+}
+
+.portfolio-projects h2 {
+  float: none;
+  width: 100%;
+  margin: 40px 0 50px;
+  color: white;
+  text-align: center;
+  text-shadow:
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+}
+
+.portfolio-projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-project-card {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 30px;
+  padding: 35px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.portfolio-project-info h3 {
+  margin-bottom: 10px;
+  color: #222;
+  font-size: 28px;
+}
+
+.project-type {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.portfolio-project-info p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.project-technologies span {
+  padding: 7px 14px;
+  border-radius: 20px;
+  background-color: #e5e5e5;
+  color: #222;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.project-visit-link {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 6px;
+  background-color: #222;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-visit-link:hover {
+  background-color: #444;
+  color: white;
+}
+
+
+/* ==================================================
+   6. EDUCACIÓN
+================================================== */
+
+.projects h2 {
+  text-shadow:
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+}
+
+.projects-container {
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.projects-container hr,
+.custom-hr {
+  width: 75%;
+  margin-left: 5cm;
+  border: 1px solid lightgray;
+}
+
+.project-card {
+  margin: 0 15px 15px 30px;
+  padding-bottom: 5px;
+  color: white;
+  font-style: oblique;
+  text-shadow:
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+}
+
+.educacionletra {
+  margin-bottom: 40px;
+}
+
+.project-card h3 {
+  margin-left: 30px;
+  font-size: 25px;
+}
+
+.project-card li {
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+
+/* ==================================================
+   7. ENLACES A CURSOS
+================================================== */
+
+.cursoslink-a {
+  color: #007bff;
+}
+
+.cursoslink-a:hover {
+  color: rgb(1, 46, 54);
+  font-weight: bolder;
+  text-decoration: underline;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px rgb(1, 46, 54),
+    0 0 30px rgb(1, 46, 54),
+    0 0 40px rgb(1, 46, 54),
     0 0 50px rgb(1, 46, 54),
     0 0 60px rgb(1, 46, 54),
     0 0 70px rgb(1, 46, 54);
 }
 
 
-/* Estilos para el botón de menú (para dispositivos móviles) */
-.navbar-toggle {
-  display: none;
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-size: 1.5rem;
-  cursor: pointer;
-  margin-bottom: 1rem;
-}
+/* ==================================================
+   8. INTRODUCCIÓN
+================================================== */
 
-@media (max-width: 1049px) {
-  .navbar-menu {
-    margin-left: 100px;
-
-  }
-}
-
-
-
-
-
-
-/* Titles */
-
-
-
-
-h2 {
-  text-align: justify;
-  font-size: 50px;
-  text-align: center;
-  float: left;
-  color: white !important;
-  /* Cambiado a blanco */
-  margin: 30px;
-  margin-left: 60px;
-  margin-top: 40px;
-  margin-bottom: 0px;
-}
-
-
-/* Used in the About Me sections */
-
-.container {
+#intro-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  transition: opacity 1s ease, visibility 1s ease;
 }
 
-/* About Me */
-
-#about-me h1 {
-  font-size: 65px;
-  margin-top: 90px;
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
   color: white;
-  /* Cambiado a blanco */
-  text-shadow:
-    -2px -2px 0 black,
-    2px -2px 0 black,
-    -2px 2px 0 black,
-    2px 2px 0 black;
-  /* Contorno negro de 2px */
+  text-align: center;
 }
 
-.profile_image {
-  border: 2px solid transparent;
-  width: 500px;
-  height: fit-content;
-  vertical-align: middle;
-  margin-top: 100px;
-  margin-right: 50px;
+.button_slide {
+  display: inline-block;
+  padding: 18px 36px;
+  border: 2px solid black;
+  border-radius: 0;
+  background-color: black;
+  color: #fff;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
   cursor: pointer;
-  /* Contorno negro */
-  box-shadow: 0 0 0 4px black;
-  /* Ajusta el tamaño del contorno con el valor de 4px */
-  box-shadow:
-    0 0 5px black,
-    /* Sombra suave */
-    0 0 10px black,
-    /* Más resplandor */
-    0 0 20px black,
-    /* Color fuerte */
-    0 0 30px black,
-    /* Color más intenso */
-    0 0 40px black,
-    /* Extensión del resplandor */
-    0 0 10px rgb(1, 46, 54),
-    0 0 20px rgb(1, 46, 54),
-    0 0 20px rgb(1, 46, 54);
+  box-shadow: inset 0 0 0 0 rgb(0, 89, 255);
+  transition: box-shadow 0.4s ease-out;
 }
 
-.profile_image:hover {
-  border: 2px solid rgb(1, 46, 54);
-  /* Borde rojo al pasar el ratón */
-  box-shadow: 0 3px 10px rgb(1, 46, 54), 0 0 15px rgb(1, 46, 54);
-  /* Agrega un resplandor adicional */
+.button_slide.slide_left:hover {
+  box-shadow: inset 0 0 0 50px rgb(9, 218, 255);
 }
 
+.bienvenido {
+  margin: 0;
+  padding: 20px;
+  color: white;
+  font-family: "REM";
+  font-size: 100px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow:
+    1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    0 0 10px rgba(255, 255, 255, 0.7),
+    0 0 20px rgba(255, 255, 255, 0.5);
+  user-select: none;
+}
+
+
+/* ==================================================
+   9. VIDEO DE FONDO
+================================================== */
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+/* ==================================================
+   10. BOTÓN VOLVER ARRIBA Y BOTONES GENERALES
+================================================== */
+
+.iconbutton {
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: white;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.iconbutton img {
+  display: block;
+  width: 30px;
+  height: 34px;
+  margin: 4px auto 0;
+}
+
+#scrollToTopBtn {
+  border: 2px solid rgb(0, 26, 97);
+  transition: box-shadow 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+  box-shadow: 0 10px 100px rgb(241, 241, 241);
+}
+
+button {
+  display: block;
+  width: 2in;
+  margin: 50px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #fff;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+button:hover {
+  display: block;
+  border-radius: 6px;
+  background-color: white;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+/* ==================================================
+   11. MEDIA QUERIES
+   Se agruparon al final para facilitar el mantenimiento.
+================================================== */
+
+/* Pantallas medianas y menores */
 @media (max-width: 1199px) {
   .profile_image {
     width: 300px;
+  }
+}
 
-
+/* Navbar y presentación */
+@media (max-width: 1049px) {
+  .navbar {
+    height: 120px;
   }
 
+  .profile_name {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 180px;
+  }
 
-
+  .navbar-menu {
+    margin-left: 100px;
+  }
 }
 
-
-.infocontainer {
-  width: 100%;
-  /* Este ancho puede ser ajustado según lo que necesites */
-  display: flex !important;
-  font-size: 25px;
-  color: white !important;
-  text-shadow:
-    -2px -2px 0 black,
-    2px -2px 0 black,
-    -2px 2px 0 black,
-    2px 2px 0 black;
-  /* Contorno negro de 2px */
-}
-
+/* Tablets y pantallas pequeñas */
 @media (max-width: 991px) {
   .infocontainer {
     width: 300px;
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: flex-start !important;
-    justify-content: flex-start !important;
-
-
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
-}
 
-@media (max-width: 991px) {
   .myinfo {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: flex-start !important;
-    justify-content: flex-start !important;
-    text-align: left !important;
-    margin-left: -370px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: -370px;
+    text-align: left;
     transform: translateX(35px);
   }
 }
 
-/* dispositivos iPad Air y Asus */
+@media (min-width: 992px) {
+  .infocontainer {
+    margin-top: 20px;
+  }
+}
+
+/* Ajustes específicos que ya tenía el diseño para ciertos anchos */
+@media (max-width: 854px) {
+  .navbar-menu {
+    margin-right: -100px;
+    transform: translateX(-80px);
+  }
+}
 
 @media (max-width: 854px) and (min-width: 822px) {
   .all_skills {
@@ -303,351 +635,37 @@ h2 {
   }
 }
 
-
-
-
-
-
-/* Skills */
-
-.all_skills {
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
-  margin-left: 45px;
-}
-
-.all_skills h6 {
-  padding-top: 20px;
-  /* Ajusta este valor según el espacio que quieras */
-
-}
-
-
-
-
-
-
-.skill {
-  background-color: white;
-  border: 2px solid transparent;
-  /* Borde inicial transparente para evitar el cambio de tamaño */
-  display: block;
-  border-radius: 6px;
-  text-align: center;
-  margin: 50px;
-  padding: 10px;
-  width: 200px;
-  height: 110px;
-  transition: border 0.3s ease, box-shadow 0.3s ease;
-  font-size: 20px;
-  box-shadow: 0 3px 10px white;
-  cursor: pointer;
-  /* Cambia el cursor al pasar sobre la carta */
-}
-
-/* Estilo al pasar el ratón sobre la carta */
-.skill:hover {
-  border: 2px solid rgb(0, 26, 97);
-  /* Borde rojo al pasar el ratón */
-  box-shadow: 0 3px 10px rgb(0, 26, 97), 0 0 15px rgb(0, 26, 97);
-  /* Agrega un resplandor adicional */
-}
-
-
-
-.skill img {
-  height: 35px;
-  align-items: center;
-}
-
-
-
-/* Projects */
-
-
-.projects h2 {
-  text-shadow:
-    -2px -2px 0 black,
-    2px -2px 0 black,
-    -2px 2px 0 black,
-    2px 2px 0 black;
-  /* Contorno negro de 2px */
-
-}
-
-.projects-container {
-  margin-top: 30px;
-  margin-left: 60px;
-}
-
-.projects-container hr {
-  border: 1px solid lightgray;
-  width: 75%;
-  margin-left: 5cm;
-}
-
-.custom-hr {
-  border: 1px solid lightgray !important;
-  width: 75%;
-  margin-left: 5cm;
-}
-
-.project-card {
-  margin: 0 15px 15px 30px;
-  padding-bottom: 5px;
-  color: white;
-  /* Cambiado a blanco */
-  font-style: oblique;
-  text-shadow:
-    -2px -2px 0 black,
-    2px -2px 0 black,
-    -2px 2px 0 black,
-    2px 2px 0 black;
-  /* Contorno negro de 2px */
-
-}
-
-.educacionletra {
-  margin-bottom: 40px !important;
-  /* Ajusta este valor según tus necesidades */
-}
-
-.project-card h3 {
-  font-size: 25px;
-  margin-left: 30px;
-}
-
-.project-card li {
-  font-size: 20px;
-  margin-left: 30px;
-}
-
-
-/* Scroll to Top Button */
-
-.iconbutton {
-  width: 48px;
-  height: 48px;
-  border-radius: 100%;
-  background-color: white;
-  /* Cambiado a blanco */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  right: 3%;
-  bottom: 3%;
-  cursor: pointer;
-  z-index: 100;
-}
-
-.iconbutton img {
-  width: 30px;
-  height: 34px;
-  margin: auto;
-  /* Centra la imagen automáticamente */
-  display: block;
-  /* Asegura que la imagen esté alineada correctamente */
-  margin-top: 4px;
-  /* Ajusta este valor para mover la imagen hacia abajo */
-
-}
-
-/* Buttons */
-
-
-#scrollToTopBtn {
-  border: 2px solid rgb(0, 26, 97) !important;
-  /* Contorno rojo con grosor de 2px */
-  transition: box-shadow 0.3s ease;
-  /* Transición suave para el efecto hover */
-}
-
-#scrollToTopBtn:hover {
-  box-shadow: 0 10px 100px rgb(241, 241, 241);
-  /* Sombra con color rojo más intenso en hover */
-  
-}
-
-
-
-button {
-  background-color: #fff;
-  color: white;
-  display: block;
-  border-radius: 6px;
-  text-align: center;
-  margin: 50px;
-  padding: 10px;
-  width: 2in;
-  font-size: 20px;
-}
-
-button:hover {
-  background-color: white;
-  color: #fff;
-  display: block;
-  border-radius: 6px;
-  text-align: center;
-  cursor: pointer;
-}
-
-
-video {
-  position: fixed;
-  /* Mantiene el video fijo en la pantalla */
-  top: 0;
-  /* Alinea el video con la parte superior de la ventana */
-  left: 0;
-  /* Alinea el video con la parte izquierda de la ventana */
-  width: 100vw;
-  /* Establece el ancho del video al 100% del viewport width */
-  height: 100vh;
-  /* Establece la altura del video al 100% del viewport height */
-  object-fit: cover;
-  /* Asegura que el video cubra todo el fondo, manteniendo su proporción */
-  z-index: -1;
-  /* Envía el video detrás de otros contenidos */
-}
-
-
-.cursoslink-a {
-  color: #007bff;
-  /* Color del enlace en estado normal */
-}
-
-.cursoslink-a:hover {
-  color: rgb(1, 46, 54);
-  font-weight: bolder;
-  text-decoration: underline;
-  /* Agrega subrayado al pasar el cursor */
-  text-shadow:
-    0 0 5px #fff,
-    /* Sombra suave */
-    0 0 10px #fff,
-    /* Más resplandor */
-    0 0 20px rgb(1, 46, 54),
-    /* Color fuerte */
-    0 0 30px rgb(1, 46, 54),
-    /* Color más intenso */
-    0 0 40px rgb(1, 46, 54),
-    /* Extensión del resplandor */
-    0 0 50px rgb(1, 46, 54),
-    0 0 60px rgb(1, 46, 54),
-    0 0 70px rgb(1, 46, 54);
-}
-
-/* intro */
-
-/* Estilo para el overlay de introducción */
-#intro-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  transition: opacity 1s ease, visibility 1s ease;
-}
-
-
-
-.intro-content {
-  z-index: 1;
-  /* Coloca el contenido por encima del video */
-  color: white;
-  /* Asegura que el texto sea visible */
-  text-align: center;
-  /* Centra el texto y el botón horizontalmente */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* Centra el contenido horizontalmente */
-}
-
-
-
-.button_slide {
-  background-color: black !important;
-  /* Cambia el fondo a negro */
-  color: #FFF !important;
-  border: 2px solid black !important;
-  border-radius: 0px !important;
-  padding: 18px 36px !important;
-  display: inline-block !important;
-  font-family: "Lucida Console", Monaco, monospace !important;
-  font-size: 14px !important;
-  letter-spacing: 1px !important;
-  cursor: pointer !important;
-  box-shadow: inset 0 0 0 0 rgb(0, 89, 255) !important;
-  -webkit-transition: ease-out 0.4s !important;
-  -moz-transition: ease-out 0.4s !important;
-  transition: ease-out 0.4s !important;
-}
-
-
-.button_slide.slide_left:hover {
-  box-shadow: inset 0 0 0 50px rgb(9, 218, 255) !important;
-}
-
-
-
-
-.bienvenido {
-  user-select: none;
-  font-size: 100px;
-  margin: 0;
-  padding: 20px;
-  color: white;
-  /* Color del texto */
-  text-shadow:
-    1px 1px 0 #000,
-    /* Sombra negra 1 */
-    -1px -1px 0 #000,
-    /* Sombra negra 2 */
-    1px -1px 0 #000,
-    /* Sombra negra 3 */
-    -1px 1px 0 #000,
-    /* Sombra negra 4 */
-    0 0 10px rgba(255, 255, 255, 0.7),
-    /* Sombra blanca */
-    0 0 20px rgba(255, 255, 255, 0.5);
-  /* Resplandor adicional */
-
-  text-transform: uppercase;
-  /* Convertir texto a mayúsculas */
-  letter-spacing: 2px;
-  /* Espaciado entre letras */
-  font-family: 'REM' !important;
-  /* Cambiar la fuente */
-
-
-}
-
-ul li {
-  padding-bottom: 10px;
-  /* Ajusta este valor según tus necesidades */
-}
-
-
-.educacionlista {
-  width: 85%;
-
-}
-
-@media (min-width: 992px) {
-  .infocontainer {
-    margin-top: 20px;
-
+/* Celulares */
+@media (max-width: 768px) {
+  .skill-category h3 {
+    margin-left: 25px;
+    font-size: 25px;
+  }
+
+  .skill-category .all_skills {
+    justify-content: center;
+    margin-left: 0;
+    transform: none;
+  }
+
+  .portfolio-project-card {
+    padding: 22px;
+  }
+
+  .portfolio-project-info h3 {
+    font-size: 23px;
+  }
+
+  .portfolio-project-info p {
+    font-size: 14px;
   }
 }
 
-.hidden {
-  opacity: 0;
-  pointer-events: none;
+/* Restaurar el color blanco de los títulos de sección */
+
+#skills h2,
+#projects h2,
+#habilidades h2,
+#idiomas h2 {
+    color: white;
 }
